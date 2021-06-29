@@ -1,13 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Error en listar</title>
+  <title>Platillo: <%= meal.name %> </title>
 </head>
 <body>
-  <h3><%= message %></h3>
+  <h2> <%= meal.name %> </h2>
+  <p> <%= meal.description %> </p>
+  <h4> <b>$ <%= meal.price %> MXN</b> </h4>
+
+  <a href="/actualizar/<%= meal.id %> "> Actualizar Platillo </a>
 </body>
 </html>

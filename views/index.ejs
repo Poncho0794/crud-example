@@ -10,7 +10,7 @@
 
     <ul>
       <% for( let meal of meals) {%> 
-        <li><a href="#"> <%= meal.name %></a></li>
+        <li><a href="/detail/<%= meal.id %> "> <%= meal.name %></a></li>
       <% } %> 
     </ul>
     <a href="/agregar"> Agregar Platillo </a>
